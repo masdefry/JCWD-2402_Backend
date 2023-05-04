@@ -5,14 +5,14 @@ module.exports = {
         try {
             const {username, email, password} = req.body     
         
-            if(username || email || password) return res.status(406).send({
+            if(!username || !email || !password) return res.status(406).send({
                 isError: true, 
                 message: 'Data Not Complete',
                 data: null
             })
 
             // Get db
-            const findData = JSON.parse(fs.readFileSync('../db/db.json'))
+            const findData = JSON.parse(fs.readFileSync('db/db.json'))
             
             // Generate Id
             const id = findData.users.length? findData.users[findData.users.length-1].id+1 : 1
@@ -24,7 +24,7 @@ module.exports = {
             findData.users.push({id, username, email, password, code, isActive: 0})
 
             // Write db
-            fs.writeFileSync('../db/db.json', JSON.stringify(findData))
+            fs.writeFileSync('db/db.json', JSON.stringify(findData))
 
             res.status(201).send({
                 isError: false, 
