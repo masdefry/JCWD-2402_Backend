@@ -5,4 +5,6 @@ const Router = express.Router()
 const {timelineController} = require('./../controllers')
 
 Router.post('/upload/:userId', timelineController.upload)
+Router.get('/test', timelineController.test)
+
 module.exports = Router

@@ -1,1 +1,28 @@
-{"users":[{"id":1,"username":"ryandefryan","email":"ryandefryan@gmail.com","password":"abc123"},{"id":2,"username":"mdti","email":"mdti@gmail.com","password":"abc123"},{"id":3,"username":"mdti","email":"mdti@gmail.com","password":"anc124"},{"id":4,"username":"mdti","email":"mdti@gmail.com","password":"abc123"},{"id":5,"username":"ryandefryan","email":"ryandefryan@gmail.com","password":"abc12345","code":13582,"isActive":0}]}
+{
+    "users":[{"id":1,"username":"ryandefryan","email":"ryandefryan@gmail.com","password":"abc123"},{"id":2,"username":"mdti","email":"mdti@gmail.com","password":"abc123"},{"id":3,"username":"mdti","email":"mdti@gmail.com","password":"anc124"},{"id":4,"username":"mdti","email":"mdti@gmail.com","password":"abc123"},{"id":5,"username":"ryandefryan","email":"ryandefryan@gmail.com","password":"abc12345","code":13582,"isActive":0}],
+    "movies": [
+        {
+            "id"			: 1,
+            "name"			: "Weathering with You", 
+            "release_date"	: "2021-08-21",
+            "genre"			: "Romantic",
+            "status"		: "On Show",
+            "location"		: "Bandung",
+            "time"			: "9 AM",
+            "total_seat"	: 60,
+            "seat_available": 30
+        },
+        {
+            "id"			: 2, 
+            "name"			: "Garuda di Dadaku", 
+            "release_date"	: "2009-06-18",
+            "genre"			: "Drama",
+            "status"		: "Upcoming",
+            "location"		: "Bandung",
+            "time"			: "9 AM",
+            "total_seat"	: 60,
+            "seat_available": 3
+        }
+        
+    ]
+}
