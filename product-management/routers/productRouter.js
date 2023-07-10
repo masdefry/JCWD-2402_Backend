@@ -7,6 +7,6 @@ const {productController} = require('../controllers')
 // Import Middleware
 const upload = require('../middleware/upload');
 
-Router.post('/', upload, productController.test)
+Router.post('/', upload, productController.post)
 
 module.exports = Router

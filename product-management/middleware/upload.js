@@ -12,7 +12,7 @@ const upload = (req, res, next) => {
            
            // Validate each file size
             req.files.images.forEach(value => {
-                if(value.size > 100000) throw {message: `${value.originalname} is Too Large`, fileToDelete: req.files.images}
+                if(value.size > 100000000) throw {message: `${value.originalname} is Too Large`, fileToDelete: req.files.images}
             })
 
             next()
